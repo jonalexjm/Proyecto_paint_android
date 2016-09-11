@@ -59,9 +59,8 @@
         android:background="#FFFFFFFF"/>
 
     <LinearLayout
-        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
        <ImageButton
            android:id="@+id/imgBtnNegro"
@@ -83,8 +82,8 @@
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="@dimen/alturaColor"
-            android:tag="#FF0040"
-            android:background="#FF0040"/>
+            android:tag="#FF0000"
+            android:background="#FF0000"/>
         <ImageButton
             android:id="@+id/imgBtnAmarillo"
             android:layout_weight="1"
@@ -99,6 +98,49 @@
             android:layout_height="@dimen/alturaColor"
             android:tag="#00FF00"
             android:background="#00FF00"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/imgBtnMarron"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/alturaColor"
+            android:tag="#4D160B"
+            android:background="#4D160B"/>
+        <ImageButton
+            android:id="@+id/imgBtnNaranja"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/alturaColor"
+            android:tag="#FF5733"
+            android:background="#FF5733"/>
+
+        <ImageButton
+            android:id="@+id/imgBtnpiel"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/alturaColor"
+            android:tag="#FFC0CB"
+            android:background="#FFC0CB"/>
+        <ImageButton
+            android:id="@+id/imgBtnAzulFosforecente"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/alturaColor"
+            android:tag="#00FFFF"
+            android:background="#00FFFF"/>
+        <ImageButton
+            android:id="@+id/imgBtnMagneta"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/alturaColor"
+            android:tag="#2F4F4F"
+            android:background="#2F4F4F"/>
 
     </LinearLayout>
 

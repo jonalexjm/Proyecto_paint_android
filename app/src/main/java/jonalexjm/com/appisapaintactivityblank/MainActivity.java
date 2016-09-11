@@ -27,6 +27,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ImageButton amarillo;
     ImageButton verde;
 
+    ImageButton marron;
+    ImageButton piel;
+    ImageButton naranja;
+    ImageButton azul_fosforecente;
+    ImageButton magneta;
+
     ImageButton nuevo;
     ImageButton trazo;
     ImageButton borrar;
@@ -55,6 +61,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         amarillo = (ImageButton) findViewById(R.id.imgBtnAmarillo);
         verde = (ImageButton) findViewById(R.id.imgBtnVerde);
 
+        marron = (ImageButton) findViewById(R.id.imgBtnMarron);
+        piel = (ImageButton) findViewById(R.id.imgBtnpiel);
+        naranja = (ImageButton) findViewById(R.id.imgBtnNaranja);
+        azul_fosforecente = (ImageButton) findViewById(R.id.imgBtnAzulFosforecente);
+        magneta = (ImageButton) findViewById(R.id.imgBtnMagneta);
+
         nuevo = (ImageButton) findViewById(R.id.btnNuevo);
         trazo = (ImageButton) findViewById(R.id.btnTrazo);
         borrar = (ImageButton) findViewById(R.id.btnBorrar);
@@ -70,6 +82,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         trazo.setOnClickListener(this);
         borrar.setOnClickListener(this);
         guardar.setOnClickListener(this);
+        marron.setOnClickListener(this);
+        piel.setOnClickListener(this);
+        naranja.setOnClickListener(this);
+        azul_fosforecente.setOnClickListener(this);
+        magneta.setOnClickListener(this);
 
         lienzo = (Lienzo) findViewById(R.id.viewLiezo);
 
@@ -129,6 +146,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 lienzo.setColor(color);
 
                 break;
+            case R.id.imgBtnMarron:
+                color = v.getTag().toString();
+                lienzo.setColor(color);
+                break;
+            case R.id.imgBtnpiel:
+                color = v.getTag().toString();
+                lienzo.setColor(color);
+                break;
+            case R.id.imgBtnAzulFosforecente:
+                color = v.getTag().toString();
+                lienzo.setColor(color);
+                break;
+            case R.id.imgBtnNaranja:
+                color = v.getTag().toString();
+                lienzo.setColor(color);
+                break;
+            case R.id.imgBtnMagneta:
+                color = v.getTag().toString();
+                lienzo.setColor(color);
+
+                break;
             case R.id.btnNuevo:
 
                 AlertDialog.Builder newDialog = new AlertDialog.Builder(this);
@@ -153,7 +191,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnTrazo:
 
                 final Dialog tamanyopunto = new Dialog(this);
-                tamanyopunto.setTitle("Tamaño del punto:");
+                tamanyopunto.setTitle("Tamaño del pincel:");
                 tamanyopunto.setContentView(R.layout.tamano_punto);
                 //listen for clicks on tamaños de los botones
                 TextView smallBtn = (TextView)tamanyopunto.findViewById(R.id.tvPequeno);
