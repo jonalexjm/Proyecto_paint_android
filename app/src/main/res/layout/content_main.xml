@@ -23,14 +23,14 @@
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_stat_name"
+            android:src="@drawable/adicionar"
             android:id="@+id/btnNuevo" />
 
         <ImageButton
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/dibujar"
+            android:src="@drawable/lapiz"
             android:id="@+id/btnTrazo"
             />
 
@@ -38,7 +38,7 @@
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/borrar"
+            android:src="@drawable/eliminar"
             android:id="@+id/btnBorrar" />
 
 
@@ -46,7 +46,7 @@
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/guardar"
+            android:src="@drawable/salvar"
             android:id="@+id/btnGuardar" />
 
     </LinearLayout>
